@@ -55,6 +55,6 @@ app.post("/", function(request, res){
     });  
  
 })
-app.listen(2000, function(){
+app.listen(process.env.PORT || 2000, function(){
     console.log("our server is running on port 2000");
 });
